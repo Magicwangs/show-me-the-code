@@ -1,5 +1,5 @@
-传递变量给SQL语句时需要注意
-
+## 传递变量给SQL语句时需要注意
+```py
 # Never do this -- insecure!
 symbol = 'RHAT'
 c.execute("SELECT * FROM stocks WHERE symbol = '%s'" % symbol)
@@ -15,3 +15,4 @@ purchases = [('2006-03-28', 'BUY', 'IBM', 1000, 45.00),
              ('2006-04-06', 'SELL', 'IBM', 500, 53.00),
             ]
 c.executemany('INSERT INTO stocks VALUES (?,?,?,?,?)', purchases)
+```
