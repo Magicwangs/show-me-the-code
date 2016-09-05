@@ -16,3 +16,13 @@ purchases = [('2006-03-28', 'BUY', 'IBM', 1000, 45.00),
             ]
 c.executemany('INSERT INTO stocks VALUES (?,?,?,?,?)', purchases)
 ```
+
+## list去重方法：(按原list排序)
+```py
+a=['a','ss','d','d','r','a']
+news_ids=list(set(a))
+news_ids.sort(key=a.index)
+# or 建议采用后者，后者可以处理任何可迭代对象。
+sorted(news_ids,key=a.index)
+
+```
