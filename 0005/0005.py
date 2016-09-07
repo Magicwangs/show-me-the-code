@@ -24,7 +24,7 @@ def changeSize(file_name):
     print ("config OK!")
     
     for pic in file_list:
-        if pic.split('.')[1]=="jpg":
+        if len(pic.split('.'))>1 and pic.split('.')[1]=="jpg":
 #            print pic
             img=imread(file_name+'/'+pic,1)
             #可能由于图片的压缩格式问题，出现读取故障，不是图片大小的问题，已测试 6M也可读取
