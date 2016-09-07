@@ -1,4 +1,4 @@
-## difference between read(),readline(),readlins()?
+## Difference between read(),readline(),readlins()?
 
 `read()`每次读取整个文件，它通常用于将文件内容放到一个字符串变量中。然而 .read() 生成文件内容最直接的字符串表示，但对于连续的面向行的处理，它却是不必要的，并且如果文件大于可用内存，则不可能实现这种处理。
 
