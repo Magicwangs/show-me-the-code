@@ -1,0 +1,25 @@
+## HTML_Extractor
+
+**基于行块分布函数的通用网页正文抽取算法**
+
+算法主要原理
+
+1.正文区密度：在去除HTML中所有tag之后，正文区字符密度更高，较少出现多行空白；
+
+2.行块长度：非正文区域的内容一般单独标签（行块）中较短。
+
+具体实现方法参考原作者陈鑫的PDF
+
+## HTTP库：requests
+
+- [参考教程](http://liam0205.me/2016/02/27/The-requests-library-in-Python/)
+- [官方文档](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
+
+## python转义字符
+
+| 字符      |          描述         |
+|---------- |:---------------------:|
+|\\(在行尾) | 续行符                |
+|\\\\       | 反斜杠符号            |
+
+
