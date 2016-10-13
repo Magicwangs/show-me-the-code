@@ -8,7 +8,9 @@
 
 2.行块长度：非正文区域的内容一般单独标签（行块）中较短。
 
-具体实现方法参考原作者陈鑫的PDF
+算法基本可以应对大部分（中文）网页正文的提取，针对有些网站正文图片多于文字的情况，可以采用保留<img> 标签中图片链接的方法，增加正文密度。目前少量测试发现的问题有：1）文章分页或动态加载的网页；2）评论长度过长喧宾夺主的网页。
+
+- [参考教程](http://web.jobbole.com/83498/)
 
 ## HTTP库：requests
 
@@ -63,4 +65,13 @@ map(function, sequence) ：对sequence中的item依次执行function(item)，见
 >>> def add(x, y): return x+y
 >>> map(add, range(8), range(8))
 [0, 2, 4, 6, 8, 10, 12, 14]
+```
+## 正则匹配中的\1
+
+相当于（.*?）,表示任意内容，用自身的一种匹配结果代替
+
+```
+>>> regex = re.compile(r".*?var:(.*?);")
+>>> regex.sub(r"\1test", "fksf var:asfkj;")
+'asfkjtest'
 ```
