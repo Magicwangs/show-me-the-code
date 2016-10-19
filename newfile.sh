@@ -1,5 +1,5 @@
 #shell 的空格很重要
-file_number=7
+file_number=9
 new_file_path=0000
 flag=9
 while :
