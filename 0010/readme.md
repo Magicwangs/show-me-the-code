@@ -1,5 +1,5 @@
 ## 使用python PIL库实现复杂的图片验证码及缩略图
-效果图
+效果图   
 ![result](http://7xrmky.com1.z0.glb.clouddn.com/CommonChinese.PNG)
 
 ### 参考教程
