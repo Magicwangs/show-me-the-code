@@ -84,9 +84,9 @@ class CodePic:
     def chineseCodeGen(self):
         retChineseCode=list()
         for num in range(self.codeNum):
-            temp=""
+            temp=str()
             for l in range(self.codeLength):
-                # 所有汉字范围 u4e00-u9fa5 
+                # 所有汉字范围 u4E00-u9FA5 
                 head = random.randint(0xE4,0xE9)
                 body = random.randint(0xB8,0xBE)
                 tail = random.randint(0x80,0xA5)
@@ -101,7 +101,7 @@ class CodePic:
         Ucode_ChineseArray = CommenChinese.replace('\n','')
         retChineseCode=list()
         for num in range(self.codeNum):
-            temp=""
+            temp = str()
             for l in range(self.codeLength):
                 index = random.randint(0,len(Ucode_ChineseArray)-1)
                 temp = temp+Ucode_ChineseArray[index]
