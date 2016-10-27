@@ -25,7 +25,7 @@ class HTML_Extractor:
     
     __repr__=__str__
     
-    def __init__(self,url='',blockSize=5,timeout=5,image=False, proxy=None):
+    def __init__(self,url='', blockSize=5, timeout=5,image=False, proxy=None):
         self.url = url
         self.blockSize = blockSize
         self.timeout = timeout
